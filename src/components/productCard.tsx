@@ -49,6 +49,7 @@ const ProductCard: React.FC<{ product: ProductType }> = ({ product }) => {
 
   //  }
   const handleClick = () => {
+    
     const products: ProductType[] =
       JSON.parse(localStorage.getItem(CART) as string) || [];
     const isExestProducts = products.find((el) => el._id === product?._id);
